@@ -1,0 +1,21 @@
+{
+  "name": "playwright-logger",
+  "version": "1.0.4",
+  "description": "A Playwright logger library for better test debugging",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts", 
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "playwright-test": "npx playwright test && rm -rf ./test-results"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": ["playwright", "logger", "typescript"], 
+  "files": ["dist","screenshots",
+  "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-repository.git"
+  }
+}

@@ -1,0 +1,88 @@
+# Playwright Logger
+
+A simple and effective logging utility for Playwright automation tests. This library enhances debugging by automatically logging each test step and cleaning logs after every test run.
+
+## Features
+- Automatically logs every Playwright action.
+- Supports colored logs using `chalk`.
+- Cleans up logs after test execution.
+- Simple integration with Playwright.
+
+## Installation
+To install the library, run:
+
+```bash
+npm install playwright-logger
+```
+
+## Usage
+
+### Import and Extend Playwright Test
+Modify your Playwright test setup to include the logger:
+
+```typescript
+import { test } from 'playwright-logger';
+
+test('Example test with logging', async ({ page }) => {
+  await page.goto('https://example.com');
+  await page.click('text=More information');
+});
+```
+
+### Custom Logging
+You can use the logger manually within your test:
+
+```typescript
+import { Logger } from 'playwright-logger';
+
+const logger = new Logger();
+logger.logInfo('This is an informational log');
+logger.logError('This is an error log');
+```
+
+## Example Output
+
+Here are some examples of how the logs appear in the terminal and log files:
+
+### Terminal Log Output
+![Terminal Log Output](./screenshots/terminaloutput.png)
+
+### Log File with Error Handling
+![Log File Example](./screenshots/errorhandle.png)
+
+### Standard Log File Output
+![Standard Log File](./screenshots/standardoutput.png)
+
+## Configuration
+### TypeScript Support
+If you're using TypeScript, ensure your `tsconfig.json` includes:
+
+```json
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "strict": true
+  }
+}
+```
+
+### Cleaning Logs
+To automatically clean logs after each test, update `package.json`:
+
+```json
+"scripts": {
+  "playwright-test": "npx playwright test && rm -rf ./test-results"
+}
+```
+
+## Troubleshooting
+If you encounter issues with `chalk`, ensure your project is using ES modules (`"type": "module"` in `package.json`).
+
+## Contributing
+Feel free to open issues and submit pull requests on GitHub.
+
+## License
+MIT License
+
