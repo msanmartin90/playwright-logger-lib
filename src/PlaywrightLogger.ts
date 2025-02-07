@@ -1,8 +1,26 @@
 import { test as baseTest } from '@playwright/test';
 import { Logger } from './Logger';
 
+export class PlaywrightLogger {
+  private logger: Logger;
+
+  constructor() {
+    this.logger = new Logger();
+  }
+
+  logInfo(message: string) {
+    this.logger.logInfo(message);
+  }
+
+  logError(message: string) {
+    this.logger.logError(message);
+  }
+}
+
+// Create an instance of Logger
 const logger = new Logger();
 
+// Extend Playwright's test fixture
 export const test = baseTest.extend<{}, {}>({
   page: async ({ page }, use, testInfo) => {
     // Initialize logs for each test
@@ -34,5 +52,3 @@ export const test = baseTest.extend<{}, {}>({
     await use(wrappedPage);
   },
 });
-
-

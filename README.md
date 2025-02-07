@@ -35,9 +35,12 @@ You can use the logger manually within your test:
 ```typescript
 import { Logger } from 'playwright-logger';
 
+// ✅ You no longer need to import from a submodule (e.g., `playwright-logger/dist`)
+
 const logger = new Logger();
 logger.logInfo('This is an informational log');
 logger.logError('This is an error log');
+
 ```
 
 ## Example Output
@@ -63,9 +66,13 @@ If you're using TypeScript, ensure your `tsconfig.json` includes:
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "node",
+    "rootDir": "./src",  
+    "outDir": "./dist",
+    "declaration": true,  
     "strict": true
   }
 }
+
 ```
 
 ### Cleaning Logs

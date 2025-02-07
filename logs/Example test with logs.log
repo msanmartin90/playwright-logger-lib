@@ -1,5 +1,0 @@
-[34mLogs for test: Example test with logs[39m
-[34m[39m[32m[INFO]: Calling method: goto with args: ["https://example.com"][39m
-[32m[INFO]: Method: goto executed successfully[39m
-[32m[INFO]: Calling method: click with args: ["text=More information"][39m
-[32m[INFO]: Method: click executed successfully[39m
