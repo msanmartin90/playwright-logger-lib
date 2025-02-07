@@ -63,14 +63,17 @@ If you're using TypeScript, ensure your `tsconfig.json` includes:
 ```json
 {
   "compilerOptions": {
-    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "node",
-    "rootDir": "./src",  
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "outDir": "./dist",
-    "declaration": true,  
-    "strict": true
-  }
+    "rootDir": "./tests",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["tests/**/*"],
+  "exclude": ["node_modules"]
 }
 
 ```
