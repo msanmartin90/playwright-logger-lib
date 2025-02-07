@@ -45,13 +45,13 @@ logger.logError('This is an error log');
 Here are some examples of how the logs appear in the terminal and log files:
 
 ### Terminal Log Output
-![Terminal Log Output](./screenshots/terminaloutput.png)
+![Terminal Log Output](https://github.com/msanmartin90/playwright-logger-lib/blob/main/screenshots/terminaloutput.png?raw=true)
 
 ### Log File with Error Handling
-![Log File Example](./screenshots/errorhandle.png)
+![Log File Example](https://github.com/msanmartin90/playwright-logger-lib/blob/main/screenshots/errorhandle.png?raw=true)
 
 ### Standard Log File Output
-![Standard Log File](./screenshots/standardoutput.png)
+![Standard Log File](https://github.com/msanmartin90/playwright-logger-lib/blob/main/screenshots/standardoutput.png?raw=true)
 
 ## Configuration
 ### TypeScript Support
