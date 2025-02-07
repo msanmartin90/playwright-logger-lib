@@ -1,3 +1,3 @@
-export { Logger } from './Logger';
-export { PlaywrightLogger, test } from './PlaywrightLogger';
-export { LogManager } from './LogManager';
+export { Logger } from './Logger.js';
+export { PlaywrightLogger, test } from './PlaywrightLogger.js';
+export { LogManager } from './LogManager.js';

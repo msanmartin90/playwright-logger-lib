@@ -11,6 +11,8 @@
     "skipLibCheck": true,
     "declarationMap": false,  
     "stripInternal": true, 
+    "resolveJsonModule": true,
+    "noEmitOnError": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules","tests"]
