@@ -1,0 +1,10 @@
+[34mLogs for test: Example test with logging number 2[39m
+[34m[39m[32m[INFO]: Calling method: goto with args: ["https://example.com"][39m
+[32m[INFO]: Method: goto executed successfully[39m
+[32m[INFO]: Calling method: click with args: ["text=More information"][39m
+[32m[INFO]: Method: click executed successfully[39m
+[32m[INFO]: Calling method: fill with args: ["input[name=\"q\"]","Playwright"][39m
+[31m[ERROR]: Error in method: fill - Error: page.apply: Test timeout of 30000ms exceeded.[39m
+[31mCall log:[39m
+[31m[2m  - waiting for locator('input[name="q"]')[22m[39m
+[31m[39m

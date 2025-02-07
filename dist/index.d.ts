@@ -1,3 +1,3 @@
 export { Logger } from './Logger';
-export { PlaywrightLogger } from './PlaywrightLogger';
+export { PlaywrightLogger, test } from './PlaywrightLogger';
 export { LogManager } from './LogManager';
