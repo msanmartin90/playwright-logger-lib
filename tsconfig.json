@@ -7,10 +7,11 @@
     "declaration": true,
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "skipLibCheck": true,
     "declarationMap": false,  
     "stripInternal": true, 
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "noEmitOnError": false
   },

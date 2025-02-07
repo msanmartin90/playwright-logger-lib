@@ -1,5 +1,5 @@
 import { test as baseTest } from '@playwright/test';
-import { Logger } from './Logger';
+import { Logger } from './Logger.js';
 
 export class PlaywrightLogger {
   private logger: Logger;
