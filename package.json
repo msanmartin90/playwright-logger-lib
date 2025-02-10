@@ -1,6 +1,6 @@
 {
   "name": "playwright-logger",
-  "version": "1.0.22",
+  "version": "1.0.24",
   "description": "A Playwright logger library for better test debugging",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
