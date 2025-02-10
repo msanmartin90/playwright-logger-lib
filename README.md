@@ -57,6 +57,15 @@ Here are some examples of how the logs appear in the terminal and log files:
 ![Standard Log File](https://github.com/msanmartin90/playwright-logger-lib/blob/main/screenshots/standardoutput.png?raw=true)
 
 ## Configuration
+### Package.json Support
+Make sure you have the following added in your package.json file.
+```json
+{
+  "type": "module"
+}
+
+```
+
 ### TypeScript Support
 If you're using TypeScript, ensure your `tsconfig.json` includes:
 
